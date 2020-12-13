@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NuevoActivity">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar datos del Grupo "
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre del grupo"
+        android:inputType="text" />
+    <EditText
+        android:id="@+id/etPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Url de Photo"
+        android:inputType="text"/>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <EditText
+        android:id="@+id/etDisco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Disco"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etCancion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Cancion" />
+
+
+
+    <Button
+        android:id="@+id/btnActualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:text="Actualizar" />
+
+
+    <Button
+        android:id="@+id/btnRegresar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="Regresar" />
+
+</LinearLayout>
